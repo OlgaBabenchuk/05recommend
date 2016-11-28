@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cosmo Web</title>	
+	<link rel="stylesheet" href="dist/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--[if lt IE 9]>
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	
+	<header class="header-container">
+
+		<div class="header-container__bg-hand"></div>
+		<div class="header-container__bg-wave1"></div>
+		<div class="header-container__bg-wave2"></div>
+		
+		<div class="head-content">	
+
+			<div class="top-line">
+
+				<div class="logo">
+					<a href="#"><img src="dist/img/logo12.png" alt="05"></a>					
+				</div>
+
+				<nav class="main-menu">
+					<ul>
+						<li class="active"><a href="#">главная</a></li>
+						<li><a href="#">партнеры и акции</a></li>
+						<li><a href="#">промокоды</a></li>
+						<li><a href="#">новости</a></li>
+						<li><a href="#">держателям карт</a></li>
+					</ul>
+				</nav>
+
+				<div class="contacts">
+					<div class="contacts__phone">+7 (500) 500 50 50</div>
+					<button class="contacts__call-back">перезвоните мне</button>
+					<form class="call-back">
+						<label>
+							<input type="text" name="user" required="" placeholder="Имя" pattern="^[А-Яа-яЁё]+$" class="fild name">
+						</label>
+						<label>
+							<input type="tel" name="phone" required="" placeholder="Телефон" pattern="[0-9]*" class="fild name">
+						</label>
+						<button>Отправить</button>
+					</form>
+				</div>
+
+			</div>
+
+
+			<div class="header-text">
+				<p>лучшие возможности<br>твоего города в<br>одной карте</p>
+				<p>Получайте до 30% скидки в сотнях магазинов и<br>заведений Вашего города с универсальной<br>картой скидок 05рекомендует</p>
+
+				<div class="city">
+					<div class="city__name">Москва
+						<ul class="city-list">
+							<li><a href="#">Магадан</a></li>
+							<li><a href="#">Магас</a></li>
+							<li><a href="#">Магнитогорск</a></li>
+							<li><a href="#">Майкоп</a></li>
+							<li><a href="#">Макаров</a></li>
+							<li><a href="#">Макушино</a></li>
+							<li><a href="#">Малая Вишера</a></li>
+							<li><a href="#">Малгобек</a></li>
+							<div class="city-list__pointer"></div>
+						</ul>
+					</div>
+				</div>
+
+			</div>			
+
+			<div class="header__arrow">
+				<img src="dist/img/arrow_down.png" alt="arrow">
+			</div>
+
+		</div>
+	</header>
+
+
+	<section class="content-wrapper">
+
+		<section class="video-sec">
+			<div class="section-wrapper">
+
+				<h3 class="video__title">как это <span>работает</span></h3>
+				<div class="video-item">
+					<iframe src="https://www.youtube.com/embed/ZqkIZ7AZNwg" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+		</section>
+
+		<div class="content-wrapper__2">
+			
+			<section class="order-sec">
+				<div class="section-wrapper">
+					
+					<div class="order__price">
+						<h3>еще нет карты 05рекомендует?</h3>
+						<h4>Оставь заявку и получи карту в течении 24 часов</h4>
+						<p>Единоразовый платеж за получение карты - <span>1599 руб.</span></p>
+						<p>С промокодом - <span>999 руб.</span></p>
+					</div>
+
+					<div class="order-card__wrapper">
+						<h3><span>заказать</span> персональную карту<br>05рекомендует</h3>
+						<div class="arrow-black"></div>
+
+						<div class="order-card">
+
+							<div class="card-box">
+								<div class="card-recomend">
+									<img src="dist/img/card_1.png" alt="05 card">
+								</div>
+
+								<div class="card-list">
+									<p>Выберите дизайн карты:</p>
+									<ul class="card-list__block">
+										<li class="cl__item">
+											<img src="dist/img/card_1.png" alt="05 card">
+										</li>
+										<li class="cl__item">
+											<img src="dist/img/card_2.png" alt="05 card">
+										</li>
+										<li class="cl__item">
+											<img src="dist/img/card_3.png" alt="05 card">
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="card-form">
+								<form class="cf__user-data">
+									<label>
+										<span class="form-icons icon -check-f"></span>
+										<input type="text" name="user" required placeholder="Имя" pattern="^[А-Яа-яЁё]+$" title="Имя кирилицей" class="fild name">
+										<div class="form-bg-gradient"></div>
+									</label>
+
+									<label>
+										<span class="form-icons icon -face"></span>
+										<input type="text" name="surname" required placeholder="Фамилия" pattern="^[А-Яа-яЁё]+$"  title="Фамилия кирилицей" class="fild name">
+										<div class="form-bg-gradient"></div>
+									</label>
+
+									<label>
+										<span class="form-icons icon -mail"></span>
+										<input type="email" name="email" required placeholder="Email" title="Формат xyz@mail.com" class="fild name">
+										<div class="form-bg-gradient"></div>
+									</label>
+
+									<label>
+										<span class="form-icons icon -phone"></span>								
+										<input type="tel" name="phone" required placeholder="+7" pattern="[+][0-9]{2}" title="Формат +99" class="fild name data__short-sec-1">
+										<div class="form-bg-gradient_short-1"></div>
+
+										<input type="tel" name="phone" required placeholder="- - -" pattern="[0-9]{3}" title="Формат 999" class="fild name data__short-sec-2">
+										<div class="form-bg-gradient_short-2"></div>
+
+										<input type="tel" name="phone" required placeholder="Телефон" pattern="[0-9]{5,7}" title="Формат 99999"  class="fild name data__midle-sect">
+										<div class="form-bg-gradient_middle"></div>
+									</label>
+
+									<label class="radio-btn">
+										<input type="radio" name="sex" class="radio-bnt radio-bg-grey" checked><span>Муж.</span>
+									</label>
+									<label class="radio-btn">
+										<input type="radio" name="sex" class="radio-bnt radio-bg-wight"><span>Жен.</span>
+									</label>
+
+									<label>
+										<span class="form-icons icon -data"></span>								
+										<input type="number" name="date" required class="fild name data__short-sec-1" title="День от 1 до 31" min="1" max="31">
+										<div class="form-bg-gradient_short-1"></div>
+
+										<input type="number" name="month" required class="fild name data__short-sec-2" title="Месяц от 1 до 12" min="1" max="12">
+										<div class="form-bg-gradient_short-2"></div>
+
+										<input type="number" name="year" required placeholder="Дата рождения" class="fild name data__midle-sect" title="Год от 1920 до 2006" min="1920" max="2006">
+										<div class="form-bg-gradient_middle"></div>
+									</label>
+
+									<label>
+										<span class="form-icons icon -finger"></span>
+										<input type="text" name="code" required placeholder="Промокод" pattern="^[ 0-9]+$" title="Формат 9999999" class="fild name">
+										<div class="form-bg-gradient"></div>
+									</label>
+
+									<label>
+										<span class="form-icons icon -card"></span>
+										<input type="id-card" name="card" required placeholder="Выбор способа оплаты" class="fild name" list="for-pay">
+										<div class="form-bg-gradient"></div>
+										<datalist id="for-pay">
+											<option>MasterCard</option>
+											<option>VISA</option>
+											<option>Cash</option>
+										</datalist>								
+									</label>								
+									
+								</form>
+							</div>		
+						</div>
+
+						<button class="oc__btn">
+							<div class="btn__icon icon -check"></div>хочу карту 05рекомендует
+						</button>
+
+						<h1>Акция: 1+1=3</h1>
+						<p>Приобретая 2 карты получайте третью <span>в подарок*</span></p>
+						<h6>*Акция не ограничивается во времени и действует на постоянной основе</h6>
+
+					</div>	
+
+				</div>
+			</section>
+
+			<div class="bottom-block-bg"></div>
+			<div class="bottom-cards-bg"></div>
+
+		</div>
+	</section>
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+	<script type="text/javascript" src="dist/js/common.js"></script>
+
+</body>
+</html>

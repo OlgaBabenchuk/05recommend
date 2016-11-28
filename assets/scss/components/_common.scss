@@ -1,0 +1,125 @@
+@font-face {
+	font-family: 'Panton';
+	src: url("../fonts/Panton.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'VAL';
+	src: url("../fonts/VAL.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font-family: 'Roboto', 'Open Sans';
+	font-size: 18px;
+	font-weight: 400;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	@extend .headers;
+	font-size: 72px;
+
+	@include MQ(XS) {
+		font-size: 48px;
+	}
+}
+
+h2 {
+	@extend .headers;
+	font-size: 45px;
+
+	@include MQ(XS) {
+		font-size: 36px;
+		font-weight: 600;
+	}
+}
+
+h3 {
+	@extend .headers;
+	font-size: 36px;
+	line-height: 46px;
+	color: $color-2;
+
+	@include MQ(XS) {
+		font-size: 24px;
+		font-weight: 600;
+	}
+}
+
+.head-content,
+.section-wrapper {
+	margin: 0 auto;
+	width: 80%;
+	position: relative;	
+
+	@include MQ(XL) {
+		width: 100%;
+	}
+}
+
+.head-content{
+	padding-bottom: 180px;
+}
+
+
+// CONTENT BACKGRAUNDS
+.content-wrapper {
+	background: url(../img/bg-lines1.png) repeat-X;
+	background-position: (-350px 25px);	
+	position: relative;
+		
+	.content-wrapper__2 {
+		width: 100%;
+		background: url(../img/bg-lines1.png) repeat-X;
+		background-position: (-1000px 150px);	
+	}
+
+	.bottom-block-bg {
+		position: absolute;
+		bottom: 0;
+
+		width: 100%;
+		height: 500px;
+		background-color: rgba(241, 245, 248, 0.6);
+	}
+
+	.bottom-cards-bg {
+		position: absolute;
+		bottom: 0;
+		z-index: 60;
+
+		width: 100%;
+		height: 180px;
+		background-image: url(../img/cards-bg.png);
+		background-size: cover;
+
+		@include MQ(XL) {
+			background-position: (50% 0);
+		}
+
+		@include MQ(L) {
+			background-position: (50% 0);
+		}
+	}
+}
+
+/*--------- EXTENDS ---------*/
+
+.headers {
+	font-family: 'Panton', 'Open Sans';
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.btn {
+	padding: 10px 30px;
+	border-radius: 18px;
+	text-transform: uppercase;
+}

@@ -1,0 +1,34 @@
+/* breakpoints */
+
+// desktops
+
+$S:     320px;   
+$XS:    480px;   
+$M:     768px;     
+$L:     992px;     
+$XL:    1200px;
+$XXL:   1440px;
+
+
+// media queries desktop first
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (max-width: $S) { @content; } 
+  }
+  @else if $canvas == XS {
+   @media only screen and (max-width: $XS) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (max-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (max-width: $L) { @content; } 
+  }
+  @else if $canvas == XL {
+   @media only screen and (max-width: $XL) { @content; } 
+  }
+  @else if $canvas == XXL {
+   @media only screen and (max-width: $XXL) { @content; } 
+  }
+}
